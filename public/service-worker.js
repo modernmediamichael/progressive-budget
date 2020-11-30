@@ -12,6 +12,7 @@ const staticFilesToPreCache = [
   '/index.js',
   '/styles.css',
   '/manifest.webmanifest',
+  '/db.js'
 ].concat(iconFiles);
 
 
@@ -24,7 +25,7 @@ self.addEventListener('install', function(evt) {
       }),
   );
 
-  self.skipWaiting();
+  // self.skipWaiting();
 });
 
 // activate
